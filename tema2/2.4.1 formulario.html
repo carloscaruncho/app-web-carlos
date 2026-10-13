@@ -49,17 +49,51 @@
 
     <!-- Primer bloque: Personaje -->
     <fieldset>
-        <legend>Personaje</legend>
-        
+        <legend>Datos</legend>
         <p>
-            <label for="superheroe">Superhéroe favorito:</label>
+            <label for="superheroe">superheroe</label>
+            <input list="superheroe" name="superheroe" placeholder="selecciona">
+            <datalist id="superheroe">
+                <!-- Marvel -->
+                <option value="Spider-Man">Spider-Man</option>
+                <option value="Iron Man">Iron Man</option>
+                <option value="Capitán América">Capitán América</option>
+                <option value="Thor">Thor</option>
+                <option value="Hulk">Hulk</option>
+                <option value="Bruja Escarlata">Bruja Escarlata</option>
+                <option value="Black Panther">Black Panther</option>
+                <option value="Doctor Strange">Doctor Strange</option>
+                
+                <!-- DC Comics -->
+                <option value="Batman">Batman</option>
+                <option value="Superman">Superman</option>
+                <option value="Wonder Woman">Wonder Woman</option>
+                <option value="Flash">Flash</option>
+                <option value="Aquaman">Aquaman</option>
+                <option value="Supergirl">Supergirl</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="pais">pais:</label>
             <!-- Menú desplegable para elegir entre varias opciones -->
-            <select id="superheroe" name="superheroe">
-                <option value="" disabled selected>Selecciona uno...</option>
-                <option value="spiderman">Spider-Man</option>
-                <option value="batman">Batman</option>
-                <option value="ironman">Iron Man</option>
-                <option value="wonderwoman">Wonder Woman</option>
+            <select id="pais" name="pais">
+                <!-- Europa -->
+                <option value="espana">España</option>
+                <option value="portugal">Portugal</option>
+                <option value="italia">Italia</option>
+                <option value="francia">Francia</option>
+                <option value="alemania">Alemania</option>
+                <option value="reino_unido">Reino Unido</option>
+                
+                <!-- América -->
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="estados_unidos">Estados Unidos</option>
+                
+                <!-- Asia / Oceanía -->
+                <option value="japon">Japón</option>
+                <option value="australia">Australia</option>
             </select>
         </p>
         
