@@ -49,7 +49,7 @@
 
     <!-- Primer bloque: Personaje -->
     <fieldset>
-        <legend>Datos</legend>
+    
         <p>
             <label for="superheroe">superheroe: </label>
             <input list="superheroe" name="superheroe" placeholder="Selecciona uno...">
@@ -72,6 +72,30 @@
                 <option value="Aquaman">Aquaman</option>
                 <option value="Supergirl">Supergirl</option>
             </datalist>
+        </p>
+        
+        <p>
+            <label for="color">Color: </label>
+            <input type="color" id="color" name="color">
+        </p>
+    </fieldset>
+
+    <!-- Segundo bloque: Datos de contacto -->
+    <fieldset>
+        <legend>Datos de contacto</legend>
+        
+        <p>
+            <label for="nombre">Nombre completo: </label>
+            <input type="text" id="nombre" name="nombre">
+        </p>
+        
+        <p>
+            <label for="email">Correo electrónico: </label>
+            <input type="email" id="email" name="email">
+        </p>
+        <p>
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
         </p>
         <p>
             <label for="pais">pais: </label>
@@ -97,25 +121,39 @@
                 <option value="australia">Australia</option>
             </select>
         </p>
-        
         <p>
-            <label for="color">Color: </label>
-            <input type="color" id="color" name="color">
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="600 000 000" pattern="[0-9]{9}" title="Introduce un número de 9 dígitos">
         </p>
     </fieldset>
-
-    <!-- Segundo bloque: Datos de contacto -->
     <fieldset>
-        <legend>Datos de contacto</legend>
-        
+        <legend>Forma de contacto preferida</legend>
         <p>
-            <label for="nombre">Nombre completo: </label>
-            <input type="text" id="nombre" name="nombre">
+            <label>
+                <input type="radio" name="contacto" value="Email"> Email
+            </label>
+            
+            <label>
+                <input type="radio" name="contacto" value="Teléfono"> Telefono
+            </label>
+
+            <label>
+                <input type="radio" name="contacto" value="Carta"> Carta
+            </label>
         </p>
-        
+    </fieldset>
+    <fieldset>
+        <legend>Asignatura preferida</legend>
         <p>
-            <label for="email">Correo electrónico: </label>
-            <input type="email" id="email" name="email">
+            <label>
+                <input type="checkbox" name="Asignatura" id="Asignatura">Aplicaciones Web
+            </label><br>
+            <label>
+                <input type="checkbox" name="Asignatura" id="Asignatura">Python
+            </label><br>
+            <label>
+                <input type="checkbox" name="Asignatura" id="Asignatura">Servicion en red
+            </label><br>
         </p>
     </fieldset>
 
@@ -124,5 +162,5 @@
         <button type="submit">Enviar formulario</button>
     </p>
 
-
+    
 </body>
