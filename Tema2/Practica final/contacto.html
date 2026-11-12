@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi CV</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagenes/INDEX/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/INDEX/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagenes/INDEX/favicon-16x16.png">
+    <link rel="manifest" href="Imagenes/INDEX/site.webmanifest">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #243247;
+            background: #f3f6fa;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            width: 100vw;
+            max-width: none;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            box-sizing: border-box;
+            padding: 0px 5vw;
+            background: linear-gradient(rgba(24, 143, 255, 0.384), rgba(253, 253, 253, 0.589), rgba(84, 245, 183, 0.466)), url(Imagenes/baner.png) center / cover no-repeat;
+            color: white;
+        }
+
+        nav {
+            width: 100vw;
+            max-width: none;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            box-sizing: border-box;
+            padding: 14px 24px;
+            background: #27ad9b;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 22px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 24px;
+        }
+
+        section {
+            background: white;
+            padding: 22px;
+            margin: 18px 0;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccd5df;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #e7eef6;
+        }
+
+        footer {
+            padding: 20px 24px;
+            text-align: center;
+            color: #526174;
+        }
+
+        button {
+            background-image: linear-gradient(rgba(0, 253, 156, 0.767), rgba(0, 183, 255, 0.664), rgba(0, 4, 255, 0.575));
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input,
+        select,
+        textarea {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 6px 0 16px;
+            border: 1px solid #ccd5df;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline;
+            width: auto;
+            margin-right: 6px;
+        }
+
+        input[type="file"] {
+            border: none;
+            padding-left: 0;
+        }
+
+        fieldset {
+            border: 1px solid #ccd5df;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 18px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <main>
+            <span style="color: rgb(0, 0, 0); font-size: 40px;">Contacto</span>
+        </main>
+    </header>
+
+    <nav>
+        <a href="index.html"><button>INDEX</button></a>
+        <a href="aficiones.html"><button>AFICIONES</button></a>
+        <a href="contacto.html"><button>CONTACTO</button></a>
+    </nav>
+
+
+    <section>
+        <h1>Contacto profesional</h1>
+
+        <p>
+            Rellena el siguiente formulario para contactar conmigo
+            y ofrecerme unas prácticas o empleo.
+        </p>
+    </section>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <section>
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre y apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="fecha">Fecha de disponibilidad:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <label for="cv">Adjuntar currículum:</label>
+                <input type="file" id="cv" name="cv" accept=".pdf">
+            </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>Motivo del contacto</legend>
+
+                <label for="motivo">Motivo:</label>
+                <select id="motivo" name="motivo">
+                    <option value="">Selecciona una opción</option>
+                    <option value="practicas">Prácticas</option>
+                    <option value="empleo">Empleo</option>
+                    <option value="informacion">Información</option>
+                    <option value="entrevista">Entrevista</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="area">Área de interés:</label>
+                <input list="areas" id="area" name="area">
+
+                <datalist id="areas">
+                    <option value="Redes">
+                    <option value="Desarrollo web">
+                    <option value="Ciberseguridad">
+                    <option value="Sistemas y Soporte">
+                    <option value="Inteligencia Artificial">
+                </datalist>
+
+                <p>Medio de contacto preferido:</p>
+
+                <input type="radio" id="email" name="medio" value="email">
+                <label for="email">Correo electrónico</label>
+
+                <input type="radio" id="telefono_medio" name="medio" value="telefono">
+                <label for="telefono_medio">Teléfono</label>
+
+                <p>
+                    <input type="checkbox" id="autorizacion" name="autorizacion" required>
+                    <label for="autorizacion">Acepto que se utilicen mis datos para responder al contacto.</label>
+                </p>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="6"></textarea>
+            </fieldset>
+        </section>
+
+        <section>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </section>
+
+    </form>
+
+
+
+    <footer>
+        <p>Mi CV personal - 2.º SMR</p>
+    </footer>
+
+</body>
+
+</html>

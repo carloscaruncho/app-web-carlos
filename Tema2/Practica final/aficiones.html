@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aficiones - Mi CV</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagenes/INDEX/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/INDEX/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagenes/INDEX/favicon-16x16.png">
+    <link rel="manifest" href="Imagenes/INDEX/site.webmanifest">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #243247;
+            background: #f3f6fa;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            width: 100vw;
+            max-width: none;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            box-sizing: border-box;
+            padding: 0px 5vw;
+            background: linear-gradient(rgba(24, 143, 255, 0.384), rgba(253, 253, 253, 0.589), rgba(84, 245, 183, 0.466)), url(Imagenes/baner.png) center / cover no-repeat;
+            color: white;
+        }
+
+        nav {
+            width: 100vw;
+            max-width: none;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            box-sizing: border-box;
+            padding: 14px 24px;
+            background: #27ad9b;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 22px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 24px;
+        }
+
+        section {
+            background: white;
+            padding: 22px;
+            margin: 18px 0;
+            border-radius: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            font-size: .9rem;
+            color: #526174;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccd5df;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #e7eef6;
+        }
+
+        footer {
+            padding: 20px 24px;
+            text-align: center;
+            color: #526174;
+        }
+
+        button {
+            background-image: linear-gradient(rgba(0, 253, 156, 0.767), rgba(0, 183, 255, 0.664), rgba(0, 4, 255, 0.575));
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            border: 2px solid #000000;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            border-radius: 10px;
+            border: 4px solid rgb(12, 88, 76);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <main>
+            <span style="color: rgb(0, 0, 0); font-size: 40px;">Aficiones</span>
+        </main>
+    </header>
+
+    <nav>
+        <a href="index.html"><button>INDEX</button></a>
+        <a href="aficiones.html"><button>AFICIONES</button></a>
+        <a href="contacto.html"><button>CONTACTO</button></a>
+    </nav>
+
+
+
+    <section>
+        <h1>Mis aficiones</h1>
+
+        <p>
+            En esta página comparto mis <strong>pasatiempos favoritos</strong>
+            y el tiempo que les dedico. Haz clic en cualquiera de ellos
+            para ir directamente a su sección:
+        </p>
+
+        <ol>
+            <li><a href="#videojuegos">Videojuegos</a></li>
+            <li><a href="#programar">Programar</a></li>
+            <li><a href="#musica">Escuchar música</a></li>
+        </ol>
+    </section>
+
+    <section id="videojuegos">
+        <h2>1. Videojuegos</h2>
+
+        <p>
+            Me encanta explorar mundos virtuales y jugar partidas
+            competitivas con amigos. Es mi forma favorita de desconectar.
+        </p>
+
+        <figure>
+            <img class="banner-img" src="./Imagenes/videojuegos.jpg" alt="Persona jugando videojuegos">
+        </figure>
+    </section>
+
+    <section id="programar">
+        <h2>2. Programar</h2>
+
+        <p>
+            Me gusta crear páginas web y aprender nuevos lenguajes
+            de programación. Para aprender utilizo páginas como
+            <a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a>.
+        </p>
+
+        <figure>
+            <img class="banner-img" src="./Imagenes/programacion.jpg" alt="Persona programando">
+        </figure>
+    </section>
+
+    <section id="musica">
+        <h2>3. Escuchar música</h2>
+
+        <p>
+            Escucho música mientras estudio, juego o programo.
+            Me ayuda a concentrarme y a relajarme.
+        </p>
+
+        <figure>
+            <img class="banner-img" src="./Imagenes/musica.jpg" alt="Auriculares para escuchar música">
+        </figure>
+    </section>
+
+    <section>
+        <h2>Frecuencia de mis aficiones</h2>
+
+        <table>
+            <tr>
+                <th>Afición</th>
+                <th>Frecuencia</th>
+                <th>Interés</th>
+            </tr>
+
+            <tr>
+                <td>Videojuegos</td>
+                <td>Diaria</td>
+                <td>Alto</td>
+            </tr>
+
+            <tr>
+                <td>Programar</td>
+                <td>Semanal</td>
+                <td>Alto</td>
+            </tr>
+
+            <tr>
+                <td>Escuchar música</td>
+                <td>Diaria</td>
+                <td>Medio</td>
+            </tr>
+        </table>
+
+        <p><a href="#inicio">Volver arriba ↑</a></p>
+    </section>
+
+
+
+    <footer>
+        <p>Mi CV personal - 2.º SMR</p>
+    </footer>
+
+</body>
+
+</html>

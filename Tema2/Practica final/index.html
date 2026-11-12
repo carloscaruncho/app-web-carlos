@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CV</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagenes/INDEX/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagenes/INDEX/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagenes/INDEX/favicon-16x16.png">
+    <link rel="manifest" href="Imagenes/INDEX/site.webmanifest">
+
+    <!-- CSS -->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #243247;
+            background: #f3f6fa;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            width: 100vw;
+            max-width: none;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            box-sizing: border-box;
+            padding: 0px 5vw;
+            background: linear-gradient(rgba(24, 143, 255, 0.384), rgba(253, 253, 253, 0.589), rgba(84, 245, 183, 0.466)), url(Imagenes/baner.png ) center / cover no-repeat;
+            color: white;
+        }
+
+        nav {
+            width: 100vw;
+            max-width: none;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            box-sizing: border-box;
+            padding: 14px 24px;
+            background: #27ad9b;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 22px;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 24px;
+        }
+
+        section {
+            background: white;
+            padding: 22px;
+            margin: 18px 0;
+            border-radius: 10px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            font-size: .9rem;
+            color: #526174;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccd5df;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #e7eef6;
+        }
+
+        footer {
+            padding: 20px 24px;
+            text-align: center;
+            color: #526174;
+        }
+
+        button {
+            background-image: linear-gradient(rgba(0, 253, 156, 0.767), rgba(0, 183, 255, 0.664), rgba(0, 4, 255, 0.575));
+
+            background-size: cover;
+            /* Ajusta la imagen para que llene todo el botón */
+            background-position: center;
+            /* Centra la imagen */
+            border-radius: 10px;
+            /* Hace los bordes redondos */
+            color: rgb(255, 255, 255);
+            /* Color del texto */
+            border: 2px solid #000000;
+            /* Borde clásico */
+            padding: 10px 20px;
+            /* Espacio interno */
+            font-weight: bold;
+            /* Texto en negrita */
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <main>
+            <span style="color: rgb(0, 0, 0); font-size: 40px;">CV Carlos Carruncho</span>
+        </main>
+    </header>
+    <nav>
+        <!--Boton index-->
+        <a href="index.html">
+            <button>INDEX</button>
+        </a>
+        <!--Boton aficiones-->
+        <a href="aficiones.html">
+            <button>AFICIONES</button>
+        </a>
+        <!--Boton contacto-->
+        <a href="contacto.html">
+            <button>CONTACTO</button>
+        </a>
+    </nav>
+    <section>
+        <h1>Carlos Carruncho</h1>
+        <p><mark>Estudiante de 2.º de SMR</mark></p>
+        <p>Soy <i>Carlos Caruncho</i> estudiante de <u>informática</u> y me interesa aprender sobre ordenadores, redes y
+            sistemas operativos.</p>
+    </section>
+    <section>
+        <h2>Formación académica</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Año</th>
+                    <th>Estudios</th>
+                    <th>Centro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024</td>
+                    <td>ESO</td>
+                    <td>Instituto</td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>1.º SMR</td>
+                    <td>IES sierra de guadarrama</td>
+                </tr>
+                <tr>
+                    <td>2026</td>
+                    <td>2.º SMR</td>
+                    <td>IES sierra de guadarrama</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Español: nativo.</li>
+            <li>Inglés: básico.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Habilidades técnicas</h2>
+        <ol>
+            <li>Sistemas operativos
+                <ul>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                </ul>
+            </li>
+            <li>Programación
+                <ul>
+                    <li>HTML</li>
+                    <li>Python</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Habilidades personales</h2>
+        <ul>
+            <li>Trabajo en equipo.</li>
+            <li>Responsabilidad.</li>
+            <li>Organización.</li>
+        </ul>
+    </section>
+
+</body>
+
+
+
+</html>

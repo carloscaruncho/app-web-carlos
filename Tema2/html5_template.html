@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<title>Responsive HTML5 Page Layout Template</title>
+	<meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+	<!-- <link rel="stylesheet" href="style.css"> -->
+	<style>
+		header {
+		}
+
+		nav {
+			background-color: rgb(19, 122, 117);
+		}
+
+		section {
+			background-color: rgb(136, 187, 138);
+		}
+
+		article {
+			background-color: rgb(214, 171, 51);
+		}
+
+		footer {
+			/* El degradado de dos colores idénticos con 0.6 (60%) de opacidad tiñe la imagen */
+			background: linear-gradient(rgba(224, 247, 255, 0.534), rgba(48, 48, 48, 0.808)), 
+						url("../assets/images.jpeg") center / cover no-repeat;
+		}
+
+		aside {
+			background-color: rgb(204, 96, 96);
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div id="logo">
+			<!-- 1. AÑADIDO: Ruta al icono en el src y envuelto el texto en un h1 -->
+			<img src="../assets/" height="50px">
+			<h1>Título cabecera</h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a>
+				<li><a href="">Menu 1</a>
+				<li><a href="">Menu 2</a>
+				<li><a href="">Menu 3</a>
+				<!-- 2. AÑADIDO: Menu 4 bajo nav/ul -->
+				<li><a href="">Menu 4</a>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<strong>Ejemplo de página HTML5 con elementos: header, nav, section, main, article, aside,
+			footer, address.</strong>
+	</section>
+	<section id="pageContent">
+		<main role="main">
+			<article>
+				<h2>Título artículo 1</h2>
+				<p>Lorem ipsum dolor sit amet, nonumes voluptatum mel ea, cu case ceteros cum. Novum commodo malorum vix
+					ut. Dolores consequuntur in ius, sale electram dissentiunt quo te. Cu duo omnes invidunt, eos eu
+					mucius fabellas. Stet facilis ius te, quando voluptatibus eos in. Ad vix mundi alterum, integre
+					urbanitas intellegam vix in.</p>
+			</article>
+			<article>
+				<h2>Título artículo 2</h2>
+				<p>Eum facete intellegat ei, ut mazim melius usu. Has elit simul primis ne, regione minimum id cum. Sea
+					deleniti dissentiet ea. Illud mollis moderatius ut per, at qui ubique populo. Eum ad cibo legimus,
+					vim ei quidam fastidii.</p>
+			</article>
+			<!-- 3. AÑADIDO: Artículos 3 y 4 bajo section/main -->
+			<article>
+				<h2>Título artículo 3</h2>
+				<p>Contenido personalizado para el nuevo artículo número 3 requerido en el ejercicio.</p>
+			</article>
+			<article>
+				<h2>Título artículo 4</h2>
+				<p>Contenido personalizado para el nuevo artículo número 4 requerido en el ejercicio.</p>
+			</article>
+		</main>
+	</section>
+	<aside>
+		<div>Barra lateral 1</div>
+		<div>Barra lateral 2</div>
+		<div>Barra lateral 3</div>
+		<!-- 4. AÑADIDO: Barra lateral 4 en aside -->
+		<div>Barra lateral 4</div>
+	</aside>
+	<footer>
+		<!-- 5. AÑADIDO: Texto personalizado en el footer -->
+		<p>&copy; Actividad realizada por ByStudent. Todos los derechos reservados.
+		<address>
+			Contacto: <a href="mailto:me@example.com">Correo</a>
+		</address>
+	</footer>
+</body>
+
+</html>
