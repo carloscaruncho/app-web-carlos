@@ -1,0 +1,201 @@
+/* =========================================
+   ESTILOS GENERALES, BANNER Y BOTÓN INDEX
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner-title {
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.btn-index {
+    background-image: url('../assets/baner.pnj');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 2px solid #1595a6;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   ESTILOS DE LA TABLA (PRÁCTICA 2)
+   ========================================= */
+table {
+    width: 90%;
+    margin: 0 auto;
+    background-image: url('../assets/images.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-spacing: 5px; /* Permite que se vean los bordes redondeados y márgenes */
+}
+
+/* Caption: bordes redondeados, letra blanca, fuente elegida, fondo oscuro */
+caption {
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #222222;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Todo el contenido de la tabla (th, td) */
+th, td {
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+    margin: 2%;
+    padding: 2%;
+    border: 5px outset;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Primera fila de la tabla (días de la semana en thead) */
+thead th {
+    border-radius: 12px;
+    background-color: #1595a6;
+    color: #ffffff;
+}
+
+/* Hueco en blanco a la izquierda del lunes (primera fila y primera columna del thead) */
+thead > tr:first-child > th:first-child {
+    background-color: transparent;
+    border: none;
+}
+
+/* Primera columna de la tabla (horas en tbody): fondo azul marino y letra blanca */
+tbody td:nth-child(1) {
+    background-color: #000080; /* Azul marino (Navy) */
+    color: #ffffff;
+}
+
+/* =========================================
+   CLASES DE ASIGNATURAS Y EFECTOS :HOVER
+   ========================================= */
+
+/* Ocultar el enlace del aula virtual por defecto */
+td span {
+    visibility: hidden;
+    font-size: 0.85em;
+}
+
+td span a {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Mostrar el enlace al pasar el ratón por encima de cualquier celda de asignatura */
+td:hover span {
+    visibility: visible;
+}
+
+/* 1. Sostenibilidad */
+.sostenibilidad {
+    background-color: #deb887;
+}
+.sostenibilidad:hover {
+    background-color: #c19a6b;
+}
+
+/* 2. Sistemas Operativos */
+.sistemas_operativos {
+    background-color: #ffe66e;
+}
+.sistemas_operativos:hover {
+    background-color: #e6c635;
+}
+
+/* 3. Servicios en Red */
+.servicios_red {
+    background-color: #90ee90;
+}
+.servicios_red:hover {
+    background-color: #5cd65c;
+}
+
+/* 4. Digitalización */
+.digitalizacion {
+    background-color: #7fdbdb;
+}
+.digitalizacion:hover {
+    background-color: #48b8b8;
+}
+
+/* 5. I.P.E */
+.ipe {
+    background-color: #f08080;
+}
+.ipe:hover {
+    background-color: #d9534f;
+}
+
+/* 6. Aplicaciones Web */
+.aplicaciones_web {
+    background-color: #87cefa;
+}
+.aplicaciones_web:hover {
+    background-color: #4da6ff;
+}
+
+/* 7. Python */
+.python {
+    background-color: #f48fb1;
+}
+.python:hover {
+    background-color: #e05a87;
+}
+
+/* 8. Inglés */
+.ingles {
+    background-color: #d8bfd8;
+}
+.ingles:hover {
+    background-color: #b88fb8;
+}
+
+/* 9. Seguridad Informática */
+.seguridad_informatica {
+    background-color: #ffb266;
+}
+.seguridad_informatica:hover {
+    background-color: #e68a2e;
+}
+
+/* 10. Recreo */
+.recreo {
+    background-color: #d3d3d3;
+    letter-spacing: 3px;
+}
+.recreo:hover {
+    background-color: #a9a9a9;
+    color: #ffffff;
+}
